@@ -658,8 +658,6 @@ a{text-decoration:none;color:inherit}
 .pay-btn::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(255,255,255,.2) 0%,rgba(255,255,255,0) 50%)}
 .pay-btn:active{transform:scale(.98)}
 .pay-btn:hover{background:#d4ff1a;box-shadow:0 8px 32px rgba(200,255,0,.45)}
-.pay-btn-apple{width:100%;height:52px;border-radius:var(--rmd);border:1px solid var(--b2);background:var(--bg3);color:var(--w);font-size:14px;font-weight:700;display:flex;align-items:center;justify-content:center;gap:8px;cursor:pointer;transition:all .18s;margin-top:10px;font-family:var(--fb)}
-.pay-btn-apple:hover{background:var(--surf);border-color:var(--w4)}
 .pay-secure{display:flex;align-items:center;justify-content:center;gap:6px;font-family:var(--fm);font-size:10px;font-weight:500;color:var(--w3);letter-spacing:.5px;padding:12px 0 4px}
 .pay-spinner{width:44px;height:44px;border-radius:50%;border:3px solid var(--b2);border-top-color:var(--lime);animation:spin 1s linear infinite}
 .pay-proc{position:absolute;inset:0;background:rgba(10,15,13,.92);display:none;flex-direction:column;align-items:center;justify-content:center;gap:16px;border-radius:inherit;z-index:10}
@@ -1780,10 +1778,6 @@ a{text-decoration:none;color:inherit}
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
           <span id="pay-btn-lbl">参加する ¥500</span>
         </button>
-        <button class="pay-btn-apple" onclick="processPaymentApple()">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.05 20.28c-.98.95-2.05.88-3.08.4-1.09-.5-2.08-.48-3.23 0-1.44.62-2.2.44-3.06-.4C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
-          Apple Pay
-        </button>
       </div>
 
       <!-- サブスク案内バー（未加入ユーザーのみ・控えめ表示） -->
@@ -2000,7 +1994,7 @@ a{text-decoration:none;color:inherit}
     <div class="sh au"><p class="sh-eye">Why Meetful</p><h2 class="sh-h">2つの<span class="lime">こだわり</span></h2></div>
     <div class="why-panel">
       <ul class="why-list">
-        <li class="why-item"><div class="why-num-col"><span class="why-num">01</span></div><div class="why-body-col"><h3 class="why-name">18〜35歳向け</h3><p class="why-desc">登録時に生年月日を確認。同世代だから話が合う、気を使いすぎない。</p></div><div class="why-arr"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></div></li>
+        <li class="why-item"><div class="why-num-col"><span class="why-num">01</span></div><div class="why-body-col"><h3 class="why-name">20・30代が中心</h3><p class="why-desc">登録時に生年月日を確認。同世代だから話が合う、気を使いすぎない。</p></div><div class="why-arr"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></div></li>
         <li class="why-item"><div class="why-num-col"><span class="why-num">02</span></div><div class="why-body-col"><h3 class="why-name">趣味・交流が軸</h3><p class="why-desc">カフェ、ごはん、散歩、音楽。共通の興味から自然に友達になれる場所。</p></div><div class="why-arr"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></div></li>
       </ul>
     </div>
@@ -2026,7 +2020,7 @@ a{text-decoration:none;color:inherit}
       </div>
     </div>
 
-    <div class="safety-panel"><div class="safety-head"><div class="safety-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L3 7v5c0 5 4 9 9 10 5-1 9-5 9-10V7l-9-5z"/></svg></div><div><p class="safety-lbl">Safety First</p><h2 class="safety-h">安心して参加できます</h2></div></div><ul class="safety-list"><li class="safety-row"><div class="safety-dot">✓</div><span>生年月日で年齢確認（18〜35歳対象）</span></li><li class="safety-row"><div class="safety-dot">✓</div><span>勧誘・営業行為は禁止、違反は即時退会</span></li><li class="safety-row"><div class="safety-dot">✓</div><span>通報・ブロック機能で問題のある参加者を排除</span></li><li class="safety-row"><div class="safety-dot">✓</div><span>個人情報はイベント参加者に公開されません</span></li></ul></div>
+    <div class="safety-panel"><div class="safety-head"><div class="safety-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L3 7v5c0 5 4 9 9 10 5-1 9-5 9-10V7l-9-5z"/></svg></div><div><p class="safety-lbl">Safety First</p><h2 class="safety-h">安心して参加できます</h2></div></div><ul class="safety-list"><li class="safety-row"><div class="safety-dot">✓</div><span>生年月日で年齢確認</span></li><li class="safety-row"><div class="safety-dot">✓</div><span>勧誘・営業行為は禁止、違反は即時退会</span></li><li class="safety-row"><div class="safety-dot">✓</div><span>通報・ブロック機能で問題のある参加者を排除</span></li><li class="safety-row"><div class="safety-dot">✓</div><span>個人情報はイベント参加者に公開されません</span></li></ul></div>
 
     <div class="fcta"><p class="fcta-eye">Ready?</p><h2 class="fcta-h">リアルな出会いを、<br>日常にする。</h2><p class="fcta-sub">登録は30秒。無料で始められます。</p><button class="btn btn-xl btn-full" style="background:var(--bg);color:var(--w);font-weight:800;border:1px solid rgba(255,255,255,.15);position:relative;z-index:1" onclick="nav('register')">無料ではじめる <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div>
 
@@ -2049,9 +2043,9 @@ a{text-decoration:none;color:inherit}
     <div class="search-bar"><div class="si"><span class="si-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="7"/><path d="M17 17l4 4"/></svg></span><input class="sinp" type="search" placeholder="キーワードで検索..." id="search-inp" oninput="renderEvents()"></div></div>
     <div class="filter-bar">
       <p class="filter-eye">エリア</p>
-      <div class="chip-row" id="chip-area" style="margin-bottom:8px"><button class="chip on" onclick="setArea(this,'すべて')">すべて</button><button class="chip" onclick="setArea(this,'東京')">東京</button><button class="chip" onclick="setArea(this,'大阪')">大阪</button><button class="chip" onclick="setArea(this,'名古屋')">名古屋</button><button class="chip" onclick="setArea(this,'福岡')">福岡</button></div>
+      <div class="chip-row" id="chip-area" style="margin-bottom:8px"><button class="chip on" onclick="setArea(this,'すべて')">すべて</button><button class="chip" onclick="setArea(this,'東京')">東京</button><button class="chip" onclick="setArea(this,'大阪')">大阪</button><button class="chip" onclick="setArea(this,'名古屋')">名古屋</button><button class="chip" onclick="setArea(this,'福岡')">福岡</button><button class="chip" id="chip-other-area" onclick="openOtherAreaModal(this)">その他</button></div>
       <p class="filter-eye">カテゴリ</p>
-      <div class="chip-row" id="chip-cat"><button class="chip on" onclick="setCat(this,'すべて')">すべて</button><button class="chip" onclick="setCat(this,'交流')">交流</button><button class="chip" onclick="setCat(this,'カフェ')">カフェ</button><button class="chip" onclick="setCat(this,'グルメ')">グルメ</button><button class="chip" onclick="setCat(this,'ゲーム')">ゲーム</button><button class="chip" onclick="setCat(this,'雑談')">雑談</button><button class="chip" onclick="setCat(this,'スポーツ')">スポーツ</button><button class="chip" onclick="setCat(this,'アウトドア')">アウトドア</button><button class="chip" onclick="setCat(this,'音楽')">音楽</button><button class="chip" onclick="setCat(this,'趣味')">趣味</button></div>
+      <div class="chip-row" id="chip-cat"><button class="chip on" onclick="setCat(this,'すべて')">すべて</button><button class="chip" onclick="setCat(this,'交流')">交流</button><button class="chip" onclick="setCat(this,'カフェ')">カフェ</button><button class="chip" onclick="setCat(this,'グルメ')">グルメ</button><button class="chip" onclick="setCat(this,'ゲーム')">ゲーム</button><button class="chip" onclick="setCat(this,'雑談')">雑談</button><button class="chip" onclick="setCat(this,'スポーツ')">スポーツ</button><button class="chip" onclick="setCat(this,'アウトドア')">アウトドア</button><button class="chip" onclick="setCat(this,'音楽')">音楽</button><button class="chip" onclick="setCat(this,'趣味')">趣味</button><button class="chip" onclick="setCat(this,'オンライン')">オンライン</button></div>
     </div>
     <div class="ev-grid" id="ev-grid"></div>
   </main>
@@ -2285,6 +2279,10 @@ a{text-decoration:none;color:inherit}
             <div class="cf-cat-icon">🎨</div>
             <div class="cf-cat-label">趣味</div>
           </div>
+          <div class="cf-cat-item" onclick="selectCat(this,'オンライン')">
+            <div class="cf-cat-icon">🌏</div>
+            <div class="cf-cat-label">オンライン</div>
+          </div>
         </div>
         <p style="font-size:11px;color:var(--w4);margin-top:10px;font-family:var(--fm)" id="cf-cat-selected-label">タップして選択してください <span class="flbl-req">必須</span></p>
       </div>
@@ -2310,7 +2308,7 @@ a{text-decoration:none;color:inherit}
         <p class="cf-sec-title">開催場所</p>
         <div class="field">
           <label class="flbl" for="cf-place">場所 <span class="flbl-req">必須</span></label>
-          <input class="finp" type="text" id="cf-place" placeholder="例：東京都渋谷区 / オンライン" oninput="cfUpdatePreview()">
+          <input class="finp" type="text" id="cf-place" placeholder="例：東京都渋谷区 / オンライン" oninput="cfUpdatePreview();CF.selectedArea=extractPref(this.value)">
         </div>
       </div>
 
@@ -2348,7 +2346,7 @@ a{text-decoration:none;color:inherit}
 
       <!-- 04b 何人以上で開催 -->
       <div class="cf-sec">
-        <p class="cf-sec-num">04b</p>
+        <p class="cf-sec-num">05</p>
         <p class="cf-sec-title">何人以上で開催</p>
         <div class="cf-min-limit-badge">
           <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2L3 7v5c0 5 4 9 9 10 5-1 9-5 9-10V7l-9-5z"/></svg>
@@ -2375,7 +2373,7 @@ a{text-decoration:none;color:inherit}
 
       <!-- 05 推定予算 / 主催者取り分 -->
       <div class="cf-sec">
-        <p class="cf-sec-num">05</p>
+        <p class="cf-sec-num">06</p>
         <p class="cf-sec-title">主催者取り分 / 推定予算</p>
         <p style="font-size:13px;color:var(--w3);line-height:1.65;margin-bottom:20px">参加者から受け取る金額を選択してください。<br><span style="color:var(--lime);font-weight:700">手数料を差し引いた金額があなたの収益</span>になります。<br><span style="font-size:12px;color:rgba(240,244,241,.45)">※手数料 = max(300円, 参加費の20%)</span></p>
 
@@ -2425,7 +2423,7 @@ a{text-decoration:none;color:inherit}
 
       <!-- 06 開催日時 -->
       <div class="cf-sec">
-        <p class="cf-sec-num">06</p>
+        <p class="cf-sec-num">07</p>
         <p class="cf-sec-title">開催日時</p>
         <div class="field">
           <label class="flbl" for="cf-date">開催日 <span class="flbl-req">必須</span></label>
@@ -2466,7 +2464,7 @@ a{text-decoration:none;color:inherit}
 
       <!-- 07 必要予算 -->
       <div class="cf-sec">
-        <p class="cf-sec-num">07</p>
+        <p class="cf-sec-num">08</p>
         <p class="cf-sec-title">必要予算</p>
         <p style="font-size:13px;color:var(--w3);line-height:1.65;margin-bottom:16px">参加者が当日に別途必要となる費用の目安を入力してください。<br>（飲食代・交通費など）</p>
         <div class="field">
@@ -2482,25 +2480,23 @@ a{text-decoration:none;color:inherit}
       <div class="cf-divider"></div>
 
       <!-- 08 持ち物・服装 -->
-      <div class="cf-section">
-        <p class="cf-sec-eye">08 · Bring</p>
+      <div class="cf-sec">
+        <p class="cf-sec-num">09</p>
         <p class="cf-sec-title">持ち物・服装</p>
         <div class="field">
           <label class="flbl" for="cf-bring">持ち物・服装 <span style="color:var(--w4);font-size:10px;font-weight:500">任意</span></label>
           <textarea class="ftarea" id="cf-bring" maxlength="300"
             placeholder="例：歩きやすい靴、雨具、動きやすい服装など"
-            oninput="cfCnt('cf-bring','cf-bc',300)"
             style="min-height:90px"></textarea>
-          <div class="cf-cnt-row"><span id="cf-bc">0</span>/300</div>
         </div>
       </div>
 
-      <!-- 09 注意事項 -->
+      <!-- 09 備考 -->
       <div class="cf-sec">
-        <p class="cf-sec-num">08</p>
-        <p class="cf-sec-title">注意事項</p>
+        <p class="cf-sec-num">10</p>
+        <p class="cf-sec-title">備考</p>
         <div class="field">
-          <label class="flbl" for="cf-caution">注意事項 <span style="color:var(--w4);font-size:10px;font-weight:500">任意</span></label>
+          <label class="flbl" for="cf-caution">備考 <span style="color:var(--w4);font-size:10px;font-weight:500">任意</span></label>
           <textarea class="ftarea" id="cf-caution" maxlength="200" placeholder="例：20代以外の方の参加はできません。&#10;雨天の場合は前日にご連絡します。" oninput="cfCnt('cf-caution','cf-cc',200)" style="min-height:100px"></textarea>
           <p class="fcnt" id="cf-cc">0 / 200</p>
         </div>
@@ -2535,13 +2531,12 @@ a{text-decoration:none;color:inherit}
       <div class="field"><label class="flbl" for="r-pass">Password</label><input class="finp" type="password" autocomplete="new-password" placeholder="8文字以上" id="r-pass"></div>
       <button class="btn btn-lime btn-xl btn-full" onclick="regS1()">次へ進む <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
       <div class="auth-or"><div class="auth-or-line"></div><span class="auth-or-txt">or</span><div class="auth-or-line"></div></div>
-      <button class="social-btn">🍎　Appleで続ける</button>
       <p class="auth-foot">すでにアカウントをお持ち？<a onclick="nav('login')" style="cursor:pointer">ログイン</a></p>
     </div>
     <div class="auth-body" id="reg-s2" style="display:none">
       <p class="auth-eye">Step 02 / 03</p><h2 class="auth-h">年齢を<br><span class="lime">確認します</span></h2>
       <div class="age-box"><div class="age-box-icon"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2L3 7v5c0 5 4 9 9 10 5-1 9-5 9-10V7l-9-5z"/></svg></div><p class="age-box-text">Meetfulはリアルイベントコミュニティサービスです。生年月日で年齢を確認します。</p></div>
-      <div class="field"><label class="flbl">Date of Birth</label><div class="dob-wrap"><select class="finp fsel" id="dob-y" style="flex:2;font-size:16px"><option value="">年</option><option value="2008">2008</option><option value="2007">2007</option><option value="2006">2006</option><option value="2005">2005</option><option value="2004">2004</option><option value="2003">2003</option><option value="2002">2002</option><option value="2001">2001</option><option value="2000">2000</option><option value="1999">1999</option><option value="1998">1998</option><option value="1997">1997</option><option value="1996">1996</option><option value="1995">1995</option><option value="1994">1994</option><option value="1993">1993</option><option value="1992">1992</option><option value="1991">1991</option><option value="1990">1990</option><option value="1989">1989年以前</option></select><select class="finp fsel" id="dob-m" style="flex:1;padding-left:8px;padding-right:28px;font-size:16px"><option value="">月</option><option value="1">1月</option><option value="2">2月</option><option value="3">3月</option><option value="4">4月</option><option value="5">5月</option><option value="6">6月</option><option value="7">7月</option><option value="8">8月</option><option value="9">9月</option><option value="10">10月</option><option value="11">11月</option><option value="12">12月</option></select><select class="finp fsel" id="dob-d" style="flex:1;padding-left:8px;padding-right:28px;font-size:16px"><option value="">日</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option></select></div><div class="age-err" id="age-err">⚠ 申し訳ありません。本サービスは18〜35歳の方を対象としています。</div></div>
+      <div class="field"><label class="flbl">Date of Birth</label><div class="dob-wrap"><select class="finp fsel" id="dob-y" style="flex:2;font-size:16px"><option value="">年</option><option value="2008">2008</option><option value="2007">2007</option><option value="2006">2006</option><option value="2005">2005</option><option value="2004">2004</option><option value="2003">2003</option><option value="2002">2002</option><option value="2001">2001</option><option value="2000">2000</option><option value="1999">1999</option><option value="1998">1998</option><option value="1997">1997</option><option value="1996">1996</option><option value="1995">1995</option><option value="1994">1994</option><option value="1993">1993</option><option value="1992">1992</option><option value="1991">1991</option><option value="1990">1990</option><option value="1989">1989年以前</option></select><select class="finp fsel" id="dob-m" style="flex:1;padding-left:8px;padding-right:28px;font-size:16px"><option value="">月</option><option value="1">1月</option><option value="2">2月</option><option value="3">3月</option><option value="4">4月</option><option value="5">5月</option><option value="6">6月</option><option value="7">7月</option><option value="8">8月</option><option value="9">9月</option><option value="10">10月</option><option value="11">11月</option><option value="12">12月</option></select><select class="finp fsel" id="dob-d" style="flex:1;padding-left:8px;padding-right:28px;font-size:16px"><option value="">日</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option></select></div><div class="age-err" id="age-err">⚠ 申し訳ありません。現在ご登録いただけない年代です。</div></div>
       <label class="chk-row" for="agree"><input type="checkbox" id="agree"><span class="chk-row-lbl"><a onclick="openTerms('register')" style="cursor:pointer;color:var(--lime)">利用規約</a>および<a onclick="openPrivacy('register')" style="cursor:pointer;color:var(--lime)">プライバシーポリシー</a>に同意します</span></label>
       <button class="btn btn-lime btn-xl btn-full" onclick="regS2()">確認する <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
     </div>
@@ -2689,7 +2684,6 @@ a{text-decoration:none;color:inherit}
       <div class="field"><label class="flbl" for="l-pass">Password</label><input class="finp" type="password" autocomplete="current-password" placeholder="••••••••" id="l-pass"><div style="text-align:right;margin-top:7px"><a href="#" style="font-family:var(--fm);font-size:11px;color:var(--w3);text-decoration:underline">Forgot?</a></div></div>
       <button class="btn btn-lime btn-xl btn-full" onclick="doLogin()">ログイン</button>
       <div class="auth-or"><div class="auth-or-line"></div><span class="auth-or-txt">or</span><div class="auth-or-line"></div></div>
-      <button class="social-btn">🍎　Appleでログイン</button>
       <p class="auth-foot">はじめての方は<a onclick="nav('register')" style="cursor:pointer">新規登録</a></p>
     </div>
   </div>
@@ -3130,9 +3124,15 @@ a{text-decoration:none;color:inherit}
 </div>
 
 <script>
-/* ── グローバルエラーハンドラー（本番UIにエラーを表示させない） ── */
-window.onerror = function() { return true; };
-window.addEventListener('unhandledrejection', function(e) { e.preventDefault(); });
+/* ── グローバルエラーハンドラー（本番: コンソールにログ・UIには表示しない） ── */
+window.onerror = function(msg, src, line, col, err) {
+  console.error('[Meetful Error]', msg, src ? src + ':' + line : '', err || '');
+  return true; // UIへのデフォルトエラー表示は抑制
+};
+window.addEventListener('unhandledrejection', function(e) {
+  console.error('[Meetful UnhandledRejection]', e.reason);
+  e.preventDefault();
+});
 
 /* ════════════════════════════════════════════════════════
    SUPABASE 接続設定
@@ -3164,11 +3164,30 @@ function getSB() {
   return _sb;
 }
 
-/* ── セッション復元 ── */
+/* ── セッション復元 + onAuthStateChange（リロード後も状態維持） ── */
 async function restoreSession() {
   const sb = getSB(); if (!sb) return;
-  const { data: { session } } = await sb.auth.getSession();
-  if (session?.user) await _onLoginSuccess(session.user, false);
+
+  // onAuthStateChange だけで管理（getSessionの二重処理を排除）
+  // Supabase v2: リロード時は INITIAL_SESSION、手動ログイン時は SIGNED_IN が発火
+  sb.auth.onAuthStateChange(async (event, session) => {
+    if ((event === 'INITIAL_SESSION' || event === 'SIGNED_IN') && session?.user) {
+      // 二重実行防止
+      if (!loggedIn) {
+        const isReload = (event === 'INITIAL_SESSION');
+        await _onLoginSuccess(session.user, !isReload);
+      }
+    } else if (event === 'SIGNED_OUT') {
+      loggedIn = false; joinedEvents = []; hostedEvents = [];
+      const out = document.getElementById('my-out');
+      const inn = document.getElementById('my-in');
+      if (out) out.style.display = 'flex';
+      if (inn) inn.style.display = 'none';
+    } else if (event === 'TOKEN_REFRESHED' && session?.user) {
+      if (!loggedIn) await _onLoginSuccess(session.user, false);
+    }
+  });
+  // ※ getSession() の手動呼び出しは不要。onAuthStateChange の INITIAL_SESSION で代替
 }
 
 async function getCurrentUser() {
@@ -3194,8 +3213,11 @@ async function _onLoginSuccess(user, toast = true) {
   document.getElementById('my-out').style.display = 'none';
   document.getElementById('my-in').style.display  = 'flex';
   updateMypageProfile(); renderMypageEvents();
-  gotoMypage(); setNav('bn-my');
-  if (toast) showToast('ログインしました ✓');
+  // リロード時（toast=false）は画面遷移しない。手動ログイン時のみ遷移
+  if (toast) {
+    gotoMypage(); setNav('bn-my');
+    showToast('ログインしました ✓');
+  }
 }
 
 async function _loadMyEvents(userId) {
@@ -3332,10 +3354,7 @@ const FEE_RATE       = 0.20;      // 手数料率
 const SUB_DISCOUNT   = 220;       // サブスク割引額（ユーザー支払のみ）
 const SUB_MIN_PAY    = 280;       // サブスク割引後の最低支払額
 const MIN_HOST_PRICE = 500;       // イベント最低参加費
-// 旧定数（参照エラー防止）
-const HOST_RATE     = 0;
-const OPS_RATE      = 0;
-const PLATFORM_FEE  = 0;
+// 旧定数（互換参照防止のため0で残存 → 本番リリース後に削除予定）
 const MIN_PRICE     = SUB_MIN_PAY;
 
 /**
@@ -3396,7 +3415,7 @@ const PAY = {
 };
 
 /* ── CREATE STATE ── */
-let CF = { capacity: 10, hostPrice: 500, isCustom: false, minPeople: 3, selectedCat: null, coverImg: null };
+let CF = { capacity: 10, hostPrice: 500, isCustom: false, minPeople: 3, selectedCat: null, coverImg: null, selectedArea: '' };
 
 /* ═══════════════════════════════════════
    EVENT DATA
@@ -3589,11 +3608,21 @@ document.querySelectorAll('.mbg').forEach(m =>
 
 function renderEvents() {
   const q = (document.getElementById('search-inp')?.value || '').toLowerCase();
-  const list = EVS.filter(e =>
-    (areaF === 'すべて' || e.area === areaF) &&
-    (catF  === 'すべて' || e.cat  === catF) &&
-    (!q || e.title.includes(q) || e.city.includes(q))
-  );
+  const list = EVS.filter(e => {
+    // エリアフィルタ
+    let areaMatch = false;
+    if (areaF === 'すべて') {
+      areaMatch = true;
+    } else if (areaF.startsWith('__other__:')) {
+      const pref = areaF.replace('__other__:', '');
+      areaMatch = (e.area === pref || (e.city && e.city.includes(pref.replace('県','').replace('府','').replace('道','').replace('都',''))));
+    } else {
+      areaMatch = e.area === areaF;
+    }
+    return areaMatch &&
+      (catF  === 'すべて' || e.cat  === catF) &&
+      (!q || e.title.includes(q) || e.city.includes(q));
+  });
   const cnt = document.getElementById('ev-count');
   if (cnt) cnt.textContent = `— ${list.length}件のイベント`;
   const grid = document.getElementById('ev-grid'); if (!grid) return;
@@ -3666,11 +3695,55 @@ function renderEvents() {
   }).join('');
 }
 
+// 主要4都市以外の都道府県リスト
+const OTHER_PREFS = [
+  '北海道','青森県','岩手県','宮城県','秋田県','山形県','福島県',
+  '茨城県','栃木県','群馬県','埼玉県','千葉県','神奈川県',
+  '新潟県','富山県','石川県','福井県','山梨県','長野県',
+  '岐阜県','静岡県','愛知県','三重県','滋賀県','京都府',
+  '兵庫県','奈良県','和歌山県','鳥取県','島根県','岡山県',
+  '広島県','山口県','徳島県','香川県','愛媛県','高知県',
+  '佐賀県','長崎県','熊本県','大分県','宮崎県','鹿児島県','沖縄県',
+];
+
 function setArea(btn, v) {
   areaF = v;
   document.querySelectorAll('#chip-area .chip').forEach(c => c.classList.remove('on'));
-  btn.classList.add('on'); renderEvents();
+  btn.classList.add('on');
+  // その他ボタンのラベルをリセット（すべて・主要4都市を選んだとき）
+  if (v !== 'OTHER') {
+    const otherBtn = document.getElementById('chip-other-area');
+    if (otherBtn) otherBtn.textContent = 'その他';
+  }
+  renderEvents();
 }
+
+function openOtherAreaModal(btn) {
+  const list = document.getElementById('other-area-list');
+  if (!list) return;
+  // 現在の選択状態を保持
+  const currentPref = areaF.startsWith('__other__:') ? areaF.replace('__other__:', '') : '';
+  list.innerHTML = OTHER_PREFS.map(pref => `
+    <button onclick="selectOtherArea('${pref}')"
+      style="padding:7px 14px;border-radius:var(--rpill);border:1.5px solid ${pref===currentPref?'var(--lime)':'var(--b2)'};
+             background:${pref===currentPref?'rgba(200,255,0,.08)':'var(--surf)'};
+             color:${pref===currentPref?'var(--lime)':'var(--w)'};
+             font-family:var(--fm);font-size:13px;font-weight:${pref===currentPref?700:500};cursor:pointer;white-space:nowrap">
+      ${pref}
+    </button>`).join('');
+  document.getElementById('m-other-area').classList.add('on');
+}
+
+function selectOtherArea(pref) {
+  areaF = '__other__:' + pref;
+  closeModal('m-other-area');
+  // チップUI更新
+  document.querySelectorAll('#chip-area .chip').forEach(c => c.classList.remove('on'));
+  const otherBtn = document.getElementById('chip-other-area');
+  if (otherBtn) { otherBtn.textContent = 'その他（' + pref + '）'; otherBtn.classList.add('on'); }
+  renderEvents();
+}
+
 function setCat(btn, v) {
   catF = v;
   document.querySelectorAll('#chip-cat .chip').forEach(c => c.classList.remove('on'));
@@ -3904,7 +3977,7 @@ function openDetail(id, from) {
 
       <div class="desc-sec au d5"><div class="desc-h">About</div><div class="desc-body">${e.desc}</div></div>
       ${e.bring && e.bring.length > 0 ? `<div class="bring-sec au d5"><div class="bring-h">持ち物・服装</div><div class="bring-list">${e.bring.map(b=>`<div class="bring-item"><div class="bring-check">✓</div>${b}</div>`).join('')}</div></div>` : ''}
-      <div class="caution-sec au d5"><div class="caution-h">注意事項</div><div class="caution-body">${e.caution}</div></div>
+      <div class="caution-sec au d5"><div class="caution-h">備考</div><div class="caution-body">${e.caution}</div></div>
       <div><div class="rel-lbl">You might also like</div>
         <div class="hscroll" style="padding:0">${EVS.filter(x=>x.id!==id).slice(0,3).map(r=>`
         <div class="fcard" style="width:195px" onclick="openDetail('${r.id}')">
@@ -3926,9 +3999,21 @@ function openDetail(id, from) {
         </div>`;
       })()}
 
+      <!-- 編集ボタン（主催者かつ参加者0人のみ表示） -->
+      ${(isHost && (!e.status || e.status === 'active')) ? (() => {
+        const nonHostJoined = (e.participants || []).filter(p => p.name !== myName).length;
+        if (nonHostJoined === 0) {
+          return `<button class="cancel-event-btn show" style="margin-top:12px;background:rgba(200,255,0,.08);border:1.5px solid var(--lime);color:var(--lime)" onclick="openEditEvent('${id}')">
+            ✏️ イベントを編集する
+          </button>`;
+        } else {
+          return `<div style="margin-top:12px;padding:10px 14px;background:var(--surf);border:1px solid var(--b1);border-radius:10px;font-family:var(--fm);font-size:12px;color:var(--w3)">参加者がいるため、このイベント内容は変更できません</div>`;
+        }
+      })() : ''}
+
       <!-- 中止ボタン（主催者かつactiveのみ表示） -->
       ${(isHost && (!e.status || e.status === 'active')) ? `
-        <button class="cancel-event-btn show" style="margin-top:16px" onclick="openCancelEventModal('${id}')">
+        <button class="cancel-event-btn show" style="margin-top:8px" onclick="openCancelEventModal('${id}')">
           🚫 イベントを中止する
         </button>` : ''}
 
@@ -4074,14 +4159,6 @@ function processPayment() {
   document.getElementById('m-stripe-checkout').classList.add('on');
 }
 
-function processPaymentApple() {
-  if (_pendingEventPay) return;  // 二重決済防止
-  _pendingSubPlan  = null;
-  _pendingEventPay = true;
-  const proc = document.getElementById('pay-proc');
-  if (proc) proc.classList.add('on');
-  setTimeout(() => { if (proc) proc.classList.remove('on'); completePayment(); }, 800);
-}
 
 function processPaymentBalance() {
   const e = EVS.find(x => x.id === curId); if (!e) return;
@@ -4337,7 +4414,12 @@ function cfUpdatePreview() {
   if (elWarn)  elWarn.classList.toggle('on', price >= 3000);
 }
 
-function submitCreate() {
+async function submitCreate() {
+  // ── ログイン必須チェック ──
+  if (!loggedIn) {
+    showToast('イベントを作成するにはログインが必要です', 'err');
+    document.getElementById('m-login-req').classList.add('on'); return;
+  }
   // ── ペナルティ確認 ──
   if (isUnderPenalty()) {
     showToast('イベント作成制限期間中です（' + penaltyRemainingStr() + '）', 'err');
@@ -4371,7 +4453,7 @@ function submitCreate() {
   const host  = CF.isCustom
     ? Math.max(MIN_HOST_PRICE, parseInt(document.getElementById('cf-custom')?.value) || MIN_HOST_PRICE)
     : CF.hostPrice;
-  const total = host + PLATFORM_FEE;
+  const total = host;  // 参加費 = hostPrice（PLATFORM_FEE廃止済み）
 
   // 日付を整形
   const d = new Date(dateVal + 'T' + tStart);
@@ -4407,6 +4489,44 @@ function submitCreate() {
   // 主催イベントとして記録
   if (!hostedEvents.includes(newId)) hostedEvents.push(newId);
   renderMypageEvents();
+
+  // ── Supabaseにイベントを保存（ログイン済みの場合） ──
+  const sb = getSB();
+  if (sb) {
+    const user = await getCurrentUser();
+    if (user) {
+      const { data: saved, error: saveErr } = await sb.from('events').insert({
+        host_id:      user.id,
+        title,
+        description:  desc,
+        location:     place,
+        area:         CF.selectedArea || '',
+        city:         place,
+        event_date:   dateVal,
+        start_time:   tStart,
+        end_time:     tEnd,
+        capacity:     CF.capacity,
+        host_price:   host,
+        category:     CF.selectedCat || '交流',
+        image_url:    CF.coverImg || null,
+        status:       'active',
+        join_deadline_at: joinDeadlineAt,
+        created_at:   new Date().toISOString(),
+      }).select('id').single();
+
+      if (saveErr) {
+        console.error('[Meetful] イベント保存エラー:', saveErr.message);
+        showToast('イベントの保存に失敗しました: ' + saveErr.message, 'err');
+      } else if (saved?.id) {
+        // ローカルIDをDB発行IDに差し替え
+        newEvent.id = saved.id;
+        hostedEvents[hostedEvents.indexOf(newId)] = saved.id;
+        console.log('[Meetful] イベントをDBに保存しました:', saved.id);
+        // DBから最新イベント一覧を再取得
+        fetchEventsFromDB().catch(e => console.error('[Meetful] イベント再取得エラー:', e));
+      }
+    }
+  }
 
   document.getElementById('cd-title').textContent = title;
   document.getElementById('cd-place').textContent = place;
@@ -5007,6 +5127,12 @@ function confirmCancelEvent() {
   const reasonText = document.getElementById('cancel-reason-text').value.trim();
   const errEl      = document.getElementById('cancel-err');
 
+  // ── ホスト確認：自分が主催者でないイベントは中止不可 ──
+  if (!hostedEvents.includes(cancelTargetEventId)) {
+    errEl.textContent = 'このイベントを中止する権限がありません';
+    errEl.classList.add('show'); return;
+  }
+
   if (!reasonType) {
     errEl.textContent = '中止理由を選択してください';
     errEl.classList.add('show'); return;
@@ -5322,6 +5448,165 @@ let tokushoData = {
   address:        '奈良県生駒市翠光台8',
   email:          'support@meetful.jp',
 };
+
+/* ════════════════════════════════════════
+   イベント編集
+════════════════════════════════════════ */
+let _editTargetId = null;
+let _editPrice    = 500;
+let _editCat      = '';
+
+function openEditEvent(id) {
+  const e = EVS.find(x => x.id === id);
+  if (!e) return;
+  _editTargetId = id;
+  _editPrice    = e.hostPrice || 500;
+  _editCat      = e.cat || '';
+
+  // フォームに現在値を反映
+  const g = (elId, val) => { const el = document.getElementById(elId); if (el) el.value = val || ''; };
+  g('edit-title',     e.title);
+  g('edit-place',     e.city || '');
+  g('edit-desc',      e.desc || '');
+  g('edit-cap',       e.cap  || 10);
+  g('edit-minpeople', e.minPeople || 3);
+  g('edit-budget',    e.budget || '');
+  g('edit-caution',   e.caution || '');
+  g('edit-bring',     (e.bring || []).join('、'));
+  g('edit-deadline',  e.joinDeadlineAt ? e.joinDeadlineAt.replace(' ', 'T').slice(0,16) : '');
+
+  // 日時
+  if (e.dateISO) g('edit-date', e.dateISO);
+  if (e.time) {
+    const parts = e.time.split('〜');
+    g('edit-tstart', parts[0] || '');
+    g('edit-tend',   parts[1] || '');
+  }
+
+  // 参加費チップ
+  document.querySelectorAll('#edit-radios .cf-radio').forEach(r => {
+    r.classList.toggle('on', parseInt(r.querySelector('.cf-radio-price')?.textContent.replace(/[¥,]/g,'')) === _editPrice);
+  });
+
+  // カテゴリチップ
+  document.querySelectorAll('#edit-cat-list .chip').forEach(r => {
+    r.classList.toggle('on', r.textContent.trim() === _editCat);
+  });
+
+  // カバー画像プレビュー
+  const prev = document.getElementById('edit-cover-preview');
+  if (prev && e.img) {
+    prev.innerHTML = `<img src="${e.img}" style="width:100%;height:100%;object-fit:cover">`;
+  }
+
+  nav('edit-event');
+}
+
+function setEditPrice(price, btn) {
+  _editPrice = price;
+  document.querySelectorAll('#edit-radios .cf-radio').forEach(r => r.classList.remove('on'));
+  btn.classList.add('on');
+}
+
+function setEditCat(cat, btn) {
+  _editCat = cat;
+  document.querySelectorAll('#edit-cat-list .chip').forEach(r => r.classList.remove('on'));
+  btn.classList.add('on');
+}
+
+function previewEditCover(input) {
+  const file = input.files[0]; if (!file) return;
+  const reader = new FileReader();
+  reader.onload = e => {
+    const prev = document.getElementById('edit-cover-preview');
+    if (prev) prev.innerHTML = `<img src="${e.target.result}" style="width:100%;height:100%;object-fit:cover">`;
+  };
+  reader.readAsDataURL(file);
+}
+
+async function submitEditEvent() {
+  const id = _editTargetId;
+  const ev = EVS.find(x => x.id === id);
+  if (!ev) { showToast('イベントが見つかりません', 'err'); return; }
+
+  const title  = document.getElementById('edit-title')?.value.trim();
+  const place  = document.getElementById('edit-place')?.value.trim();
+  const desc   = document.getElementById('edit-desc')?.value.trim();
+  const dateV  = document.getElementById('edit-date')?.value;
+  const tStart = document.getElementById('edit-tstart')?.value;
+  const tEnd   = document.getElementById('edit-tend')?.value;
+
+  if (!title) { showToast('イベント名を入力してください', 'err'); return; }
+  if (!place) { showToast('場所を入力してください', 'err'); return; }
+  if (!desc)  { showToast('内容を入力してください', 'err'); return; }
+
+  const cap        = parseInt(document.getElementById('edit-cap')?.value) || ev.cap;
+  const minPeople  = parseInt(document.getElementById('edit-minpeople')?.value) || ev.minPeople;
+  const budget     = document.getElementById('edit-budget')?.value.trim();
+  const caution    = document.getElementById('edit-caution')?.value.trim();
+  const bringRaw   = document.getElementById('edit-bring')?.value.trim();
+  const bring      = bringRaw ? bringRaw.split('、').map(s=>s.trim()).filter(Boolean) : [];
+  const deadlineV  = document.getElementById('edit-deadline')?.value;
+
+  // 日時を整形
+  const months  = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  const days    = ['SUN','MON','TUE','WED','THU','FRI','SAT'];
+  let mo = ev.mo, dow = ev.dow, day = ev.day, fullStr = ev.full;
+  if (dateV) {
+    const d = new Date(dateV + 'T' + (tStart || '00:00'));
+    mo  = months[d.getMonth()];
+    dow = days[d.getDay()];
+    day = d.getDate();
+    fullStr = `${d.getMonth()+1}月${d.getDate()}日(${['日','月','火','水','木','金','土'][d.getDay()]}) ${tStart || ''}〜${tEnd || ''}`;
+  }
+
+  // EVSをローカル更新
+  ev.title   = title;
+  ev.city    = place;
+  ev.desc    = desc;
+  ev.cap     = cap;
+  ev.minPeople = minPeople;
+  ev.budget  = budget;
+  ev.caution = caution;
+  ev.bring   = bring;
+  ev.cat     = _editCat || ev.cat;
+  ev.hostPrice = _editPrice;
+  ev.mo      = mo;
+  ev.dow     = dow;
+  ev.day     = day;
+  ev.full    = fullStr;
+  ev.time    = `${tStart || ''}〜${tEnd || ''}`;
+  if (dateV)    ev.dateISO = dateV;
+  if (deadlineV) ev.joinDeadlineAt = deadlineV.replace('T', ' ');
+
+  // カバー画像
+  const prevEl = document.getElementById('edit-cover-preview')?.querySelector('img');
+  if (prevEl) ev.img = prevEl.src;
+
+  // Supabaseに保存
+  const sb = getSB();
+  if (sb) {
+    const { error } = await sb.from('events').update({
+      title,
+      description:     desc,
+      location:        place,
+      city:            place,
+      event_date:      dateV || undefined,
+      start_time:      tStart || undefined,
+      end_time:        tEnd || undefined,
+      capacity:        cap,
+      host_price:      _editPrice,
+      category:        _editCat || ev.cat,
+      join_deadline_at: deadlineV ? deadlineV.replace('T', ' ') : undefined,
+    }).eq('id', id);
+    if (error) { showToast('保存に失敗しました: ' + error.message, 'err'); return; }
+  }
+
+  renderEvents(); renderMypageEvents();
+  showToast('イベントを更新しました ✓');
+  nav('detail');
+  openDetail(id);  // 詳細画面を最新データで再描画
+}
 
 function openAboutSheet() {
   var el = document.getElementById('m-about-sheet');
@@ -6860,8 +7145,11 @@ document.addEventListener('DOMContentLoaded', () => {
   renderBalancePage();
   updateMypageProfile();
   renderWeeklyEvents();  // 今週のイベント（地域タブ）
-  // Supabase: セッション復元とDBからイベント取得
-  restoreSession().then(() => fetchEventsFromDB()).catch(e => console.error('[Meetful] 初期化エラー:', e));
+  // Supabase: セッション復元とDBからイベント取得（並列実行）
+  Promise.all([
+    restoreSession().catch(e => console.error('[Meetful] セッション復元エラー:', e)),
+    fetchEventsFromDB().catch(e => console.error('[Meetful] イベント取得エラー:', e)),
+  ]);
 });
 
 </script>
@@ -7052,6 +7340,101 @@ document.addEventListener('DOMContentLoaded', () => {
 </div>
 
 
+<!-- ════════════ イベント編集 ════════════ -->
+<div class="screen" id="screen-edit-event">
+  <header class="nav">
+    <button class="nav-back" onclick="nav('detail')"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M5 12l7-7M5 12l7 7"/></svg></button>
+    <span class="nav-title">イベントを編集</span>
+    <div style="width:38px"></div>
+  </header>
+  <div class="scroll" style="padding:16px 16px calc(80px + env(safe-area-inset-bottom,0px))">
+
+    <div class="cf-sec">
+      <p class="cf-sec-num">01</p><p class="cf-sec-title">カバー画像</p>
+      <div class="field">
+        <div id="edit-cover-preview" style="width:100%;aspect-ratio:16/9;border-radius:10px;background:var(--surf);border:1.5px dashed var(--b2);display:flex;align-items:center;justify-content:center;overflow:hidden;margin-bottom:8px;cursor:pointer" onclick="document.getElementById('edit-cover-inp').click()">
+          <span style="font-size:11px;color:var(--w4);font-family:var(--fm)">タップして画像を変更</span>
+        </div>
+        <input type="file" id="edit-cover-inp" accept="image/*" style="display:none" onchange="previewEditCover(this)">
+      </div>
+    </div>
+
+    <div class="cf-sec">
+      <p class="cf-sec-num">02</p><p class="cf-sec-title">イベント名 <span class="flbl-req">必須</span></p>
+      <div class="field"><input class="finp" type="text" id="edit-title" placeholder="例：渋谷カフェ巡りオフ会" maxlength="40" style="font-size:16px"></div>
+    </div>
+
+    <div class="cf-sec">
+      <p class="cf-sec-num">03</p><p class="cf-sec-title">日時 <span class="flbl-req">必須</span></p>
+      <div style="display:flex;gap:10px">
+        <div class="field" style="flex:1"><label class="flbl">開催日</label><input class="finp cf-datetime-input" type="date" id="edit-date" style="font-size:16px"></div>
+        <div class="field" style="flex:1"><label class="flbl">開始</label><input class="finp cf-datetime-input" type="time" id="edit-tstart" style="font-size:16px"></div>
+        <div class="field" style="flex:1"><label class="flbl">終了</label><input class="finp cf-datetime-input" type="time" id="edit-tend" style="font-size:16px"></div>
+      </div>
+    </div>
+
+    <div class="cf-sec">
+      <p class="cf-sec-num">04</p><p class="cf-sec-title">場所 <span class="flbl-req">必須</span></p>
+      <div class="field"><input class="finp" type="text" id="edit-place" placeholder="例：東京都渋谷区 / オンライン" style="font-size:16px"></div>
+    </div>
+
+    <div class="cf-sec">
+      <p class="cf-sec-num">05</p><p class="cf-sec-title">内容 <span class="flbl-req">必須</span></p>
+      <div class="field"><textarea class="ftarea" id="edit-desc" rows="4" style="min-height:100px;font-size:16px" placeholder="イベントの詳細を入力"></textarea></div>
+    </div>
+
+    <div class="cf-sec">
+      <p class="cf-sec-num">06</p><p class="cf-sec-title">参加人数</p>
+      <div style="display:flex;gap:10px">
+        <div class="field" style="flex:1"><label class="flbl">最小</label><input class="finp" type="number" id="edit-minpeople" min="1" max="99" style="font-size:16px"></div>
+        <div class="field" style="flex:1"><label class="flbl">定員</label><input class="finp" type="number" id="edit-cap" min="2" max="200" style="font-size:16px"></div>
+      </div>
+    </div>
+
+    <div class="cf-sec">
+      <p class="cf-sec-num">07</p><p class="cf-sec-title">推定予算</p>
+      <div class="field"><input class="finp" type="text" id="edit-budget" placeholder="例：2000〜3000円程度" style="font-size:16px"></div>
+    </div>
+
+    <div class="cf-sec">
+      <p class="cf-sec-num">08</p><p class="cf-sec-title">参加費</p>
+      <div class="cf-radio-grid" id="edit-radios">
+        <div class="cf-radio on" onclick="setEditPrice(500,this)"><div class="cf-radio-price">¥500</div></div>
+        <div class="cf-radio" onclick="setEditPrice(1000,this)"><div class="cf-radio-price">¥1,000</div></div>
+        <div class="cf-radio" onclick="setEditPrice(1500,this)"><div class="cf-radio-price">¥1,500</div></div>
+        <div class="cf-radio" onclick="setEditPrice(2000,this)"><div class="cf-radio-price">¥2,000</div></div>
+        <div class="cf-radio" onclick="setEditPrice(3000,this)"><div class="cf-radio-price">¥3,000</div></div>
+        <div class="cf-radio" onclick="setEditPrice(5000,this)"><div class="cf-radio-price">¥5,000</div></div>
+        <div class="cf-radio" onclick="setEditPrice(10000,this)"><div class="cf-radio-price">¥10,000</div></div>
+      </div>
+    </div>
+
+    <div class="cf-sec">
+      <p class="cf-sec-num">09</p><p class="cf-sec-title">締切期限</p>
+      <div class="field"><input class="finp cf-datetime-input" type="datetime-local" id="edit-deadline" style="font-size:16px"></div>
+    </div>
+
+    <div class="cf-sec">
+      <p class="cf-sec-num">10</p><p class="cf-sec-title">カテゴリ</p>
+      <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:6px" id="edit-cat-list">
+        <button class="chip" onclick="setEditCat('交流',this)">交流</button><button class="chip" onclick="setEditCat('カフェ',this)">カフェ</button><button class="chip" onclick="setEditCat('グルメ',this)">グルメ</button><button class="chip" onclick="setEditCat('ゲーム',this)">ゲーム</button><button class="chip" onclick="setEditCat('雑談',this)">雑談</button><button class="chip" onclick="setEditCat('スポーツ',this)">スポーツ</button><button class="chip" onclick="setEditCat('アウトドア',this)">アウトドア</button><button class="chip" onclick="setEditCat('音楽',this)">音楽</button><button class="chip" onclick="setEditCat('趣味',this)">趣味</button><button class="chip" onclick="setEditCat('オンライン',this)">オンライン</button>
+      </div>
+    </div>
+
+    <div class="cf-sec">
+      <p class="cf-sec-num">11</p><p class="cf-sec-title">備考</p>
+      <div class="field"><textarea class="ftarea" id="edit-caution" rows="3" style="font-size:16px" placeholder="備考・注意点など"></textarea></div>
+    </div>
+
+    <div class="cf-sec">
+      <p class="cf-sec-num">12</p><p class="cf-sec-title">持ち物 / 服装</p>
+      <div class="field"><input class="finp" type="text" id="edit-bring" placeholder="例：動きやすい服装・手ぶらでOK" style="font-size:16px"></div>
+    </div>
+
+    <button onclick="submitEditEvent()" class="btn btn-lime btn-xl btn-full" style="margin-top:8px">変更を保存する <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg></button>
+  </div>
+</div>
+
 <div class="cancel-overlay" id="m-cancel-event">
   <div class="cancel-sheet">
     <div class="cancel-sheet-title">⚠️ イベントを中止しますか？</div>
@@ -7206,6 +7589,16 @@ document.addEventListener('DOMContentLoaded', () => {
   </header>
   <div class="scroll" id="host-profile-scroll"></div>
 </div>
+<!-- ════════ その他エリア（都道府県）選択モーダル ════════ -->
+<div class="mbg" id="m-other-area">
+  <div class="msheet" style="padding:20px 16px calc(24px + env(safe-area-inset-bottom,0px))">
+    <div class="mgrip"></div>
+    <h3 style="font-family:var(--fh);font-size:16px;font-weight:800;color:var(--w);margin-bottom:14px">都道府県を選択</h3>
+    <div id="other-area-list" style="display:flex;flex-wrap:wrap;gap:8px;max-height:55vh;overflow-y:auto;padding-bottom:4px"></div>
+    <button onclick="closeModal('m-other-area')" style="width:100%;padding:12px;background:transparent;color:var(--w3);font-family:var(--fm);font-size:13px;border:1.5px solid var(--b2);border-radius:var(--rpill);cursor:pointer;margin-top:14px">閉じる</button>
+  </div>
+</div>
+
 <!-- ════════ Meetfulについて ボトムシート ════════ -->
 <div class="mbg" id="m-about-sheet">
   <div class="msheet" style="padding:24px 20px calc(28px + env(safe-area-inset-bottom,0px))">
@@ -7655,4 +8048,4 @@ document.addEventListener('DOMContentLoaded', () => {
 </div>
 
 </body>
-</html>fff
+</html>
