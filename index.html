@@ -3140,8 +3140,8 @@ window.addEventListener('unhandledrejection', function(e) {
    ・SUPABASE_URL  : Project Settings > API > Project URL
    ・SUPABASE_ANON_KEY : anon / public キー（service_role keyは絶対に使わない）
 ════════════════════════════════════════════════════════ */
-const SUPABASE_URL      = 'lmzavdzihofuaelkblha';
-const SUPABASE_ANON_KEY = 'sb_publishable_2tTGgr8H3aX081lbEhGmXQ_2CaZLCn6';
+const SUPABASE_URL      = 'YOUR_SUPABASE_URL';
+const SUPABASE_ANON_KEY = 'YOUR_SUPABASE_ANON_KEY';
 
 let _sb = null;
 function getSB() {
@@ -4653,13 +4653,12 @@ async function completeReg() {
 
   const sb = getSB();
   if (!sb) {
-    // 未設定か設定ミスかを判別して表示
     if (SUPABASE_URL === 'YOUR_SUPABASE_URL' || SUPABASE_ANON_KEY === 'YOUR_SUPABASE_ANON_KEY') {
-      showToast('Supabase接続情報が設定されていません（管理者にお問い合わせください）', 'err');
+      console.warn('[Meetful] Supabase接続情報が未設定です');
     } else if (typeof supabase === 'undefined') {
-      showToast('Supabase SDKの読み込みに失敗しました。ページを再読み込みしてください', 'err');
+      console.warn('[Meetful] Supabase SDKの読み込みに失敗しました');
     } else {
-      showToast('Supabase接続情報が正しくありません（URLまたはキーを確認してください）', 'err');
+      console.warn('[Meetful] Supabase接続情報が正しくありません');
     }
     return;
   }
@@ -4789,9 +4788,9 @@ async function doLogin() {
   const sb = getSB();
   if (!sb) {
     if (SUPABASE_URL === 'YOUR_SUPABASE_URL' || SUPABASE_ANON_KEY === 'YOUR_SUPABASE_ANON_KEY') {
-      showToast('Supabase接続情報が設定されていません', 'err');
+      console.warn('[Meetful] Supabase接続情報が未設定です');
     } else {
-      showToast('Supabase接続情報が正しくありません（URLまたはキーを確認してください）', 'err');
+      console.warn('[Meetful] Supabase接続情報が正しくありません');
     }
     return;
   }
